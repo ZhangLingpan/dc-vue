@@ -14,7 +14,7 @@ let resolve = dir => {
 }
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/vue-dc' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   productionSourceMap: false,
   configureWebpack: {
     module: {
