@@ -3,7 +3,7 @@
  * @Date: 2020-05-07 19:28:33
  */
 
- class ViewerApi {
+class ViewerApi {
   constructor(viewer) {
     this._viewer = viewer
   }
