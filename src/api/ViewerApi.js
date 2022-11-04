@@ -17,7 +17,7 @@ class ViewerApi {
       url: 'http://100.100.142.135:1800/mapcache/gmaps/smgis_sd_dark@g_hd/{z}/{x}/{y}.png'
     })
     let hdlayer = new DC.ImageryLayerFactory.createXYZImageryLayer({
-      url:'https://mapinner-test.wz-inc.com/mapcache/gmaps/futurecity_sxsy_mars_dark@g_hd/{z}/{x}/{y}.png'
+      url:'http://100.100.142.135:1800/mapcache/offline/sxsy/Mapnik/{z}/{x}/{y}.png'
     })
     this._viewer.addBaseLayer([xyz,hdlayer])
     this._viewer.compass.enable = true
