@@ -14,7 +14,7 @@ class ViewerApi {
 
   addBaseLayer() {
     let xyz = DC.ImageryLayerFactory.createXYZImageryLayer({
-      url: 'http://100.100.142.135:1800/mapcache/gmaps/smgis_sd_dark@g_hd/{z}/{x}/{y}.png'
+      url: 'http://100.100.151.221:1800/mapcache/gmaps/smgis_sd_dark@g_hd/{z}/{x}/{y}.png'
     })
     let hdlayer = new DC.ImageryLayerFactory.createXYZImageryLayer({
       url:'http://100.100.142.135:1800/mapcache/offline/sxsy/Mapnik/{z}/{x}/{y}.png'
@@ -26,12 +26,12 @@ class ViewerApi {
     let layer = new DC.TilesetLayer('layer')
     this._viewer.addLayer(layer)
     let tileset = new DC.Tileset(
-      'http://100.100.142.135:1800/mapcache/offline/building/tileset.json'
+      'http://100.100.142.135:1800/mapcache/offline/sh3dtiles/tileset.json'
     )
     let style = new DC.TilesetStyle()
     style.color = {
     conditions: [
-      ['true', 'rgb(32, 24, 255)'],
+      ['true', 'rgb(255, 255, 255)'],
     ],
     }
     tileset.setStyle(style)
